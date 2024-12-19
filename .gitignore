@@ -16,9 +16,18 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
+.DS_Storeecho -e "node_modules/\nbuild/" >> .gitignore
+git add .gitignore
+git commit -m "Update .gitignore"
+git push
+
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+node_modules/
+build/
+.envnode_modules/
+build/
