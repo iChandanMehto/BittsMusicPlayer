@@ -91,7 +91,7 @@ duration  : "3:16"
 
   return (
     <div>
-      <section className="flex flex-col md:flex-row gap-1  md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
+      <section className="flex flex-col md:flex-row gap-1 w-full  md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
         <div className="md:mr-[1vw]    w-full md:w-[30vw] h-full md:h-[500px] rounded-xl text-white bg-slate-950 border-gray-500 md:ml-2">
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14 ">
             <img
@@ -112,7 +112,7 @@ duration  : "3:16"
         </div>
 
         {/* Right Section: Songs List */}
-        <div className="items-center md:h-[500px] w-full md:w-[69vw] rounded-xl justify-center md:grid md:grid-cols-5   grid grid-cols-2 md:gap-1 h-[400px] overflow-auto md:overflow-y-auto overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
+        <div className="items-center  md:h-[500px] w-full md:w-[69vw] rounded-xl justify-center md:grid md:grid-cols-5   grid grid-cols-2  h-[400px] overflow-auto md:overflow-y-auto overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
           {songs.map((song, index) => (
             <div
               key={index}
