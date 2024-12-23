@@ -1,17 +1,49 @@
-import React, { createContext, useState, useRef, useContext } from "react";
+import React, { createContext, useState, useRef, useContext, useEffect } from "react";
 
-// Create the MusicPlayerContext
 export const MusicPlayerContext = createContext();
 
-
-
-
-// Create the MusicPlayerProvider
 export const MusicPlayerProvider = ({ children }) => {
   const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [songInfo, setSongInfo] = useState({ currentTime: 0, duration: 0 });
   const audioRef = useRef(new Audio());
+
+  
+  const updateSongInfo = () => {
+    setSongInfo({
+      currentTime: audioRef.current.currentTime,
+      duration: audioRef.current.duration,
+    });
+  };
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    audioElement.addEventListener("timeupdate", updateSongInfo);
+
+    return () => {
+      audioElement.removeEventListener("timeupdate", updateSongInfo);
+    };
+  }, []);
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setSongInfo({
+        currentTime: audioRef.current.currentTime,
+        duration: audioRef.current.duration,
+      });
+    }
+  };
+
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    audioElement.addEventListener("loadedmetadata", handleLoadedMetadata);
+
+    return () => {
+      audioElement.removeEventListener("loadedmetadata", handleLoadedMetadata);
+    };
+  }, []);
 
   const playSongHandler = () => {
     if (currentSong) {
@@ -35,15 +67,8 @@ export const MusicPlayerProvider = ({ children }) => {
     }
   };
 
-  const updateSongInfo = () => {
-    setSongInfo({
-      currentTime: audioRef.current.currentTime,
-      duration: audioRef.current.duration,
-    });
-  };
-
   const skipTrackHandler = (direction) => {
-    // Implement skipping logic based on the song array
+    // i will add some feature in future......
   };
 
   return (
@@ -64,9 +89,6 @@ export const MusicPlayerProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use MusicPlayerContext
 export const useMusicPlayer = () => {
   return useContext(MusicPlayerContext);
 };
-
-
