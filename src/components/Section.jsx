@@ -15,7 +15,7 @@ import TumHo from './music/TumHo.mp3';
 import Starboy from './music/starboy.mp3';
 import LaboKo from './music/LaboKo.mp3';
 import Choolo from './music/Choolo.mp3';
-import Perfect from './music/Perfect.mp3';
+// import Perfect from './music/Perfect.mp3';
 import OnLove from './music/Onelove.mp3';
 import TheLastDown from './music/TheLastDown.mp3'
 import aaogejabtum from './music/aaogejabtum.mp3';
@@ -112,7 +112,7 @@ duration  : "3:16"
         </div>
 
         {/* Right Section: Songs List */}
-        <div className="items-center md:h-[500px] w-full md:w-[69vw] rounded-xl justify-center md:grid md:grid-cols-5   grid grid-cols-2 md:gap-1 h-[400px] overflow-auto md:overflow-y-auto overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
+        <div className="items-center md:h-[500px]  md:w-[69vw] rounded-xl justify-center md:grid md:grid-cols-5   grid grid-cols-2 md:gap-1 h-[400px] overflow-auto md:overflow-y-auto overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
           {songs.map((song, index) => (
             <div
               key={index}
