@@ -21,7 +21,7 @@ import TheLastDown from './music/TheLastDown.mp3'
 import aaogejabtum from './music/aaogejabtum.mp3';
 import Bars from  './music/Bars.mp3'
 import BolNaHalkeHalke from './music/BolNaHalkeHalke.mp3'
-import img16 from './images/Bolnahalke.jpg'
+import img16 from './images/bolnaHalke.jpg'
 import img17 from './images/comThrough.jpg'
 import COME_THROUGH from './music/comethrough.mp3'
 import Player from "./Player"; 
