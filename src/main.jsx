@@ -6,9 +6,8 @@ import Layout from "./Layout.jsx";
 import Section from "./components/Section.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
-import { MusicPlayerProvider } from "./contexts/MusicPlayerContext"; // Import the provider
+import { MusicPlayerProvider } from "./contexts/MusicPlayerContext"; 
 
-// Define the router with routes
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +22,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-// Render the app with MusicPlayerProvider
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <MusicPlayerProvider>
