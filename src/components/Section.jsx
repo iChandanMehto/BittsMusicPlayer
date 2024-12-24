@@ -112,7 +112,7 @@ duration  : "3:16"
         </div>
 
         {/* Right Section: Songs List */}
-        <div className="items-center md:h-[500px]  md:w-3/4 rounded-xl justify-center md:grid md:grid-cols-5   grid grid-cols-2 md:gap-1 h-[400px] overflow-auto md:overflow-y-auto overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
+        <div className="items-center md:h-[500px] md:mr-2  md:w-3/4 rounded-xl justify-center md:grid md:grid-cols-5   md:overflow-y-scroll scrollbar-none grid grid-cols-2 md:gap-1 h-[400px] overflow-auto  overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
           {songs.map((song, index) => (
             <div
               key={index}
