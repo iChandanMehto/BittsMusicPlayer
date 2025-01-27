@@ -127,7 +127,7 @@ duration  : "3:16"
             <div
               key={index}
               onClick={() => handleSongSelect(song)}
-              className=" mb-24 mt-10 md:mt-12 md:mx-6 ml-4 mr-4 md:w-40 w-30 h-[100px] md:h-[100px] md:rounded-2xl rounded-xl cursor-pointer hover:bg-slate-800 "
+              className=" mb-24 mt-10 md:mt-12 md:mx-6 ml-4 mr-4 md:w-30 w-30 h-[100px] md:h-[100px] md:rounded-2xl rounded-xl cursor-pointer hover:bg-slate-800 "
             >
               <img src={song.image} className="rounded-md  " alt={song.title} />
               <h1 className="mt-3">{song.title}</h1>
