@@ -101,8 +101,8 @@ duration  : "3:16"
 
   return (
     <div>
-      <section className="flex flex-col md:flex-row    md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
-        <div className="md:mr-[1vw]   border border-slate-900  items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950  md:ml-2">
+      <section className="flex flex-col md:flex-row items-center justify-center    md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
+        <div className="md:mr-[1vw]   border border-slate-900  items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950   ">
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14 ">
             <img
               className="rounded-md shadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"
