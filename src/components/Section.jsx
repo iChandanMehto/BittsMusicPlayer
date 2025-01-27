@@ -23,10 +23,14 @@ import Bars from  './music/Bars.mp3'
 import BolNaHalkeHalke from './music/BolNaHalkeHalke.mp3'
 import img16 from './images/bolnaHalke.jpg'
 import img17 from './images/comThrough.jpg'
+import img18 from './images/reminder_cover.jpg'
+import Reminder from './music/reminder_song.mp3'
 import COME_THROUGH from './music/comeThrough.mp3'
 import Player from "./Player"; 
 
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
+import { title } from "motion/react-client";
+import { duration } from "@mui/material";
 
 const Section = () => {
   const { handleSongSelect, currentSong } = useContext(MusicPlayerContext);
@@ -82,6 +86,12 @@ duration  : "3:16"
   title: 'Starboy', artist: 'Weekend', src: Starboy, image: img02 ,
   duration :"3:50"
 },
+
+{
+  id:10,
+  title:'Reminder', artist:'Weekend', src:Reminder, image:img18,
+  duration:"3:38"
+},
 {
   id:9,
   title: 'The Last Soul Down', artist: 'NBSPLV', src:TheLastDown, image: img14,
@@ -91,11 +101,11 @@ duration  : "3:16"
 
   return (
     <div>
-      <section className="flex flex-col md:flex-row gap-1   md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
-        <div className="md:mr-[1vw]   items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-xl text-white bg-slate-950 border-gray-500 md:ml-2">
+      <section className="flex flex-col md:flex-row    md:mt-20 md:max-h-screen md:w-screen m-[4px] md:m-0">
+        <div className="md:mr-[1vw]   border border-slate-900  items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950  md:ml-2">
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14 ">
             <img
-              className="rounded-md max-h-[200px] max-w-[200px] mt-10 md:mt-0"
+              className="rounded-md shadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"
               src={currentSong ? currentSong.image : img10} 
               width={200}
               height={200}
@@ -112,7 +122,7 @@ duration  : "3:16"
         </div>
 
         {/* Right Section: Songs List */}
-        <div className="items-center md:h-[500px] md:mr-2  md:w-3/4 rounded-xl justify-center md:grid md:grid-cols-5   md:overflow-y-scroll scrollbar-none grid grid-cols-2 md:gap-1 h-[400px] overflow-auto  overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950 ">
+        <div className="items-center md:h-[500px]   md:w-[68vw] rounded-2xl justify-center md:grid md:grid-cols-5   md:overflow-y-scroll scrollbar-none grid grid-cols-2  h-[400px] overflow-auto  overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950  border border-slate-900">
           {songs.map((song, index) => (
             <div
               key={index}
