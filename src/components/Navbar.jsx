@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
 
 
-    <nav className="bg-slate-950  mx-2 h-[75px] w-full fixed top-0   mb-5 rounded-b-2xl   md:rounded-none  md:m-0 p-0 border border-slate-900 shadow-md items-center align-middle ">
+    <nav className="bg-slate-950  mr-2 ml-2 h-[75px] w-full fixed top-0   mb-5 rounded-b-2xl   md:rounded-none  md:m-0 p-0 border border-slate-900 shadow-md items-center align-middle ">
       <div className='no-underline rounded-3xl bg-slate-950 flex flex-row justify-between '>
         <ul className='no-underline flex  bg-slate-950 text-white  justify-center md:justify-start gap-1   items-center mr-5 md:gap-10 list-none font-normal text-[19px] ml-[1%]  '>
           {/* <li className='text-white'> <a className='text-white' href="#">{prop.Home}</a>Home</li> */}
