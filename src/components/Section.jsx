@@ -27,6 +27,10 @@ import img17 from './images/comThrough.jpg'
 import img18 from './images/reminder_cover.jpg'
 import img19 from './images/lcdp.jpg'
 import img20 from './images/popularimg.jpg'
+import img21 from './peaches.jpg'
+import Peaches from './music/peaches.mp3'
+import img22 from './bemine.jpg'
+import bemine from './bemine.mp3'
 import Reminder from './music/reminder_song.mp3'
 import COME_THROUGH from './music/comeThrough.mp3'
 import popular from './music/popular.mp3'
@@ -76,7 +80,7 @@ const Section = () => {
       duration:"2:39"
   },
   {
-id:10,
+id:9,
 title:'COME THROUGH ', artist :'Abdullah Maharvi & Talha Anjum' , src: COME_THROUGH, image : img17,
 duration  : "3:16"
   },
@@ -97,14 +101,24 @@ duration  : "3:16"
   duration:"3:38"
 },
 {
-  id:10,
+  id:11,
   title: 'Life Is Going On', artist: 'Cecilia Krull', src:lifeisgoingon, image: img19,
   duration:"3:34"
 },
 {
-  id:11,
+  id:12,
   title: 'Popular', artist: 'Weekend', src:popular, image: img20,
   duration:"3:34"
+},
+{
+  id:13,
+  title: 'Peaches', artist: 'Justin Beiber', src:Peaches, image: img21,
+  duration:"3:17"
+},
+{
+  id:14,
+  title: 'Be Mine', artist: 'Shubh', src:bemine, image: img22,
+  duration:"2:27"
 },
 ]
 
