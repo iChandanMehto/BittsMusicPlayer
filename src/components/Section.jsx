@@ -21,11 +21,15 @@ import TheLastDown from './music/TheLastDown.mp3'
 import aaogejabtum from './music/aaogejabtum.mp3';
 import Bars from  './music/Bars.mp3'
 import BolNaHalkeHalke from './music/BolNaHalkeHalke.mp3'
+import lifeisgoingon from './music/lifeisgoingon.mp3'
 import img16 from './images/bolnaHalke.jpg'
 import img17 from './images/comThrough.jpg'
 import img18 from './images/reminder_cover.jpg'
+import img19 from './images/lcdp.jpg'
+import img20 from './images/popularimg.jpg'
 import Reminder from './music/reminder_song.mp3'
 import COME_THROUGH from './music/comeThrough.mp3'
+import popular from './music/popular.mp3'
 import Player from "./Player"; 
 
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
@@ -93,16 +97,21 @@ duration  : "3:16"
   duration:"3:38"
 },
 {
-  id:9,
-  title: 'The Last Soul Down', artist: 'NBSPLV', src:TheLastDown, image: img14,
-  duration:"2:30"
+  id:10,
+  title: 'Life Is Going On', artist: 'Cecilia Krull', src:lifeisgoingon, image: img19,
+  duration:"3:34"
+},
+{
+  id:11,
+  title: 'Popular', artist: 'Weekend', src:popular, image: img20,
+  duration:"3:34"
 },
 ]
 
   return (
     <div>
       <section className="flex flex-col md:flex-row items-center justify-center gap-2   md:gap-4 mt-20 md:mt-20 md:max-h-screen md:w-screen  m-[4px] md:m-0 ">
-        <div className="  border border-slate-900 w-full items-center justify-center md:w-[32vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950   ">
+        <div className="  border border-slate-900 w-full items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950   ">
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14 ">
             <img
               className="rounded-md shadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"

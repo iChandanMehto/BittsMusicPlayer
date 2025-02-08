@@ -31,7 +31,7 @@ const Navbar = (prop) => {
       <div className='no-underline rounded-3xl bg-slate-950 flex flex-row justify-between '>
         <ul className='no-underline flex  bg-slate-950 text-white  justify-center md:justify-start gap-1   items-center mr-5 md:gap-10 list-none font-normal text-[19px] ml-[1%]  '>
           {/* <li className='text-white'> <a className='text-white' href="#">{prop.Home}</a>Home</li> */}
-          <li className='   text-royalblue  ml-3 md:ml-1.5  md:pl-[7px] w-[40vw] md:w-[500px]  flex items-center text-[17px] bg-[#f5f5f5]  h-[37px] mb-[10px] mt-[20px] pr-[40px] rounded-full shadow-[0_0_8px_#ddd] border-none outline-none bg-no-repeat" style="background-position: right 7px; background-size: 25px; '>
+          <li className='   text-royalblue  ml-3 md:ml-1.5  md:pl-[7px] w-[50vw] md:w-[29vw]  flex items-center text-[17px] bg-[#f5f5f5]  h-[37px] mb-[10px] mt-[20px] pr-[40px] rounded-full shadow-[0_0_8px_#ddd] border-none outline-none bg-no-repeat" style="background-position: right 7px; background-size: 25px; '>
             < FiSearch color='black' className="ml-2"  />
             <input className='focus:outline-none bg-transparent h-full border-none text-[1.10rem] w-full ml-[10px]  text-black' type="text" placeholder="Functionality coming soon! Stay tuned." ></input>
           </li>
