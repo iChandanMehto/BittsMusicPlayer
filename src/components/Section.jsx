@@ -27,7 +27,7 @@ import img17 from './images/comThrough.jpg'
 import img18 from './images/reminder_cover.jpg'
 import img19 from './images/lcdp.jpg'
 import img20 from './images/popularimg.jpg'
-import Peaches from '.music/peaches.mp3'
+import peaches from '.music/peaches.mp3'
 import img21 from './images/peachesimg.jpg'
 import img22 from '.images/bemine.jpg'
 import bemine from '.music/bemine.mp3'
@@ -113,7 +113,7 @@ duration  : "3:16"
 },
 {
   id:13,
-  title: 'Peaches', artist: 'Justin Beiber', src:Peaches, image: img21,
+  title: 'Peaches', artist: 'Justin Beiber', src:peaches, image: img21,
   duration:"3:17"
 },
 {
