@@ -22,7 +22,7 @@ export default function Footer() {
                     </li>
                 </ul>
             </div>
-            <hr className="my-2 border-gray-200 sm:mx-auto dark:border-slate-900 lg:my-8" />
+            <hr className="my-2 sm:mx-auto border-slate-900 lg:my-8" />
         </footer>
     );
 }
