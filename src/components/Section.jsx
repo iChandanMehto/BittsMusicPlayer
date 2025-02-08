@@ -20,7 +20,7 @@ import OnLove from './music/Onelove.mp3';
 import TheLastDown from './music/TheLastDown.mp3'
 import aaogejabtum from './music/aaogejabtum.mp3';
 import Bars from  './music/Bars.mp3'
-import BolNaHalkeHalke from './music/BolNaHalkeHalke.mp3'
+// import BolNaHalkeHalke from './music/BolNaHalkeHalke.mp3'
 import lifeisgoingon from './music/lifeisgoingon.mp3'
 import img16 from './images/bolnaHalke.jpg'
 import img17 from './images/comThrough.jpg'
@@ -64,11 +64,11 @@ const Section = () => {
       title: 'Labon Ko', artist: 'Pritam, KK', src: LaboKo, image: img09,
       duration:"5:38"
   },
-  {
-      id:4,
-      title: 'Bol Na Halke Halke', artist: 'Rahat Fateh Ali Khan', src:BolNaHalkeHalke, image: img16,
-      duration:"5:04"
-  },
+  // {
+  //     id:4,
+  //     title: 'Bol Na Halke Halke', artist: 'Rahat Fateh Ali Khan', src:BolNaHalkeHalke, image: img16,
+  //     duration:"5:04"
+  // },
   {
       id:5,
       title: '52 Bars', artist: 'Karan Aujla', src:Bars, image: img15 ,
