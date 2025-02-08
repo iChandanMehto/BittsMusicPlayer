@@ -28,7 +28,7 @@ import img18 from './images/reminder_cover.jpg'
 import img19 from './images/lcdp.jpg'
 import img20 from './images/popularimg.jpg'
 import Peaches from '.music/peaches.mp3'
-import img21 from './images/peaches.jpg'
+import img21 from './images/peachesimg.jpg'
 import img22 from '.images/bemine.jpg'
 import bemine from '.music/bemine.mp3'
 import Reminder from './music/reminder_song.mp3'
@@ -39,6 +39,7 @@ import Player from "./Player";
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
 import { title } from "motion/react-client";
 import { duration } from "@mui/material";
+
 
 const Section = () => {
   const { handleSongSelect, currentSong } = useContext(MusicPlayerContext);
