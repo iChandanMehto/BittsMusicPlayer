@@ -27,10 +27,10 @@ import img17 from './images/comThrough.jpg'
 import img18 from './images/reminder_cover.jpg'
 import img19 from './images/lcdp.jpg'
 import img20 from './images/popularimg.jpg'
-import peaches from '.music/peaches.mp3'
+import peaches from './music/peaches.mp3'
 import img21 from './images/peachesimg.jpg'
-import img22 from '.images/bemine.jpg'
-import bemine from '.music/bemine.mp3'
+import img22 from './images/bemine.jpg'
+import bemine from './music/bemine.mp3'
 import Reminder from './music/reminder_song.mp3'
 import COME_THROUGH from './music/comeThrough.mp3'
 import popular from './music/popular.mp3'
@@ -81,6 +81,11 @@ const Section = () => {
       duration:"2:39"
   },
   {
+    id:14,
+    title: 'Be Mine', artist: 'Shubh', src:bemine, image: img22,
+    duration:"2:27"
+  },
+  {
 id:9,
 title:'COME THROUGH ', artist :'Abdullah Maharvi & Talha Anjum' , src: COME_THROUGH, image : img17,
 duration  : "3:16"
@@ -116,11 +121,7 @@ duration  : "3:16"
   title: 'Peaches', artist: 'Justin Beiber', src:peaches, image: img21,
   duration:"3:17"
 },
-{
-  id:14,
-  title: 'Be Mine', artist: 'Shubh', src:bemine, image: img22,
-  duration:"2:27"
-},
+
 ]
 
   return (

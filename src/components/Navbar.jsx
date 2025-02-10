@@ -33,10 +33,10 @@ const Navbar = () => {
             <input className='focus:outline-none bg-transparent h-full border-none text-[1.10rem] w-full ml-[10px]  text-black' type="text" placeholder="Functionality coming soon! Stay tuned." ></input>
           </li>
         </ul>
-        {/* <ul className="text-white flex flex-row gap-3  m-3 md:mr-3 items-center text-lg">
+        <ul className="text-white flex flex-row gap-3  m-3 md:mr-3 items-center text-lg">
           <li><button>Sign in</button></li>
           <li className="bg-white text-black rounded-full md:py-1.5 md:px-4 md:font-bold font  shadow-[0_0_8px_#ddd] border-none outline-none bg-no-repeat px-1.5 py-1 "><button >Log In</button></li>
-        </ul> */}
+        </ul>
 
       </div>
 
