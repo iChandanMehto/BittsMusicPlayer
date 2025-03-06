@@ -4,6 +4,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillDiscord } from "react-icons/ai";
+import {Link, NavLink} from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -13,29 +14,48 @@ export default function Footer() {
 
             <div className="sm:flex flex flex-col items-center sm:items-center sm:justify-center">
             <ul className="flex space-x-5   text-2xl md:text-3xl  md:blockw-1/5  text-white">
-        <li>< FaSquareXTwitter/></li>
+     <Link
+     to={'https://x.com/ichandanmehto'} 
+     >
+     <li>< FaSquareXTwitter/></li>
+     </Link>
+
+
+     <Link to={'https://www.linkedin.com/in/chandanmehto/'}>
+     <li><FaLinkedin/></li>
+     </Link>
+
+<Link to={'https://github.com/Iamchandanmehto'}>
+<li><FaGithubSquare/></li>
+</Link>
   
-      <li><FaInstagramSquare/></li>
-        <li><FaLinkedin/></li>
-       <li><FaGithubSquare/></li>
-        {/* <li >< AiFillDiscord/></li> */}
           </ul>
      
-                <ul className="flex flex-wrap justify-center items-center mb-6 text-md my-6  md:text-md font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <ul className="flex flex-wrap justify-center items-center mb-6 text-sm my-6  md:text-md font-medium text-gray-500 sm:mb-0  dark:text-gray-400">
                     <li>
-                        <a href="https://chandanmehto.vercel.app/" className="gap-4 mx-4 hover:underline-none me-4 md:me-4">
-                            About
-                        </a>
+                        <Link to={'https://github.com/Iamchandanmehto/BittsMusicPlayer'}
+                         className="gap-4  hover:text-gray-200  mx-4 hover:underline-none me-4 md:me-4"
+                        >
+                                      About
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="gap-4 mx-4 hover:underline-none me-4 md:me-4">
-                            Privacy Policy
-                        </a>
+                        <Link
+                        to={'/Home'}
+                        className="gap-4 mx-4  hover:text-gray-200  hover:underline-none me-4 md:me-4"
+                        >
+                                      Privacy Policy
+                        </Link>
+                       
                     </li>
                     <li>
-                        <a href="#" className="gap-4 mx-4 hover:underline-none me-4 md:me-4">
-                            Created by
-                        </a>
+                        <Link
+                        to={'https://github.com/Iamchandanmehto'}
+                        className="gap-4 mx-4 hover:text-gray-200 hover:underline-none me-4 md:me-4"
+                        >
+                                          Created By
+                        </Link>
+                     
                     </li>
                 </ul>
             </div>

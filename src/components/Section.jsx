@@ -34,6 +34,8 @@ import bemine from './music/bemine.mp3'
 import Reminder from './music/reminder_song.mp3'
 import COME_THROUGH from './music/comeThrough.mp3'
 import popular from './music/popular.mp3'
+import goldenMood from './music/goldenMood.mp3'
+import img23 from "./images/Moodpic.jpg"
 import Player from "./Player"; 
 
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
@@ -126,6 +128,11 @@ duration  : "3:16"
   id:15,
   title: 'NBSPLV', artist: 'NBSPLV', src:TheLastDown , image: img14,
   duration:"3:17"
+},
+{
+  id:16,
+  title: 'Mood(feat.iann dior)', artist: 'El Dorado', src:goldenMood , image: img23,
+  duration:"2:19"
 },
 
 ]
