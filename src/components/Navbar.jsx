@@ -1,14 +1,4 @@
-// import React from 'react';
-// import Box from '@mui/material/Box';
-// import Drawer from '@mui/material/Drawer';
-// // import Button from '@mui/material/Button';
-// import List from '@mui/material/List';
-// import Divider from '@mui/material/Divider';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import MailIcon from '@mui/icons-material/Mail';
+
 
 // import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { FiSearch } from "react-icons/fi";
@@ -17,9 +7,6 @@ import { FiSearch } from "react-icons/fi";
 
 
 const Navbar = () => {
-
-
-
 
   return (
 
@@ -30,7 +17,7 @@ const Navbar = () => {
           {/* <li className='text-white'> <a className='text-white' href="#">{prop.Home}</a>Home</li> */}
           <li className='   text-royalblue  ml-3 md:ml-1.5 text-center  md:pl-[7px] w-[40vw] md:w-[29vw]  flex items-center text-[17px] bg-[#f5f5f5]  h-[37px] pr-[40px] rounded-full shadow-[0_0_8px_#ddd] border-none outline-none bg-no-repeat" style="background-position: right 7px; background-size: 25px; '>
             < FiSearch color='black' className="ml-2"  />
-            <input className='focus:outline-none bg-transparent h-full border-none text-[1.10rem] w-full ml-[10px]  text-black' type="text" placeholder="Functionality coming soon! Stay tuned." ></input>
+            <input className='focus:outline-none bg-transparent h-full border-none text-[1.10rem] w-full ml-[10px]  text-sm md:text-lg text-black' type="text" placeholder="Functionality coming soon! Stay tuned." ></input>
           </li>
         </ul>
         <ul className=" text-white flex flex-row gap-3   text-center m-3 md:mr-3 items-center  text-sm md:text-lg">

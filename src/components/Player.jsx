@@ -12,6 +12,8 @@ const Player = () => {
     skipTrackHandler,
   } = useContext(MusicPlayerContext);
 
+
+
   const getTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -24,7 +26,7 @@ const Player = () => {
         <p className="text-white">
           {songInfo.currentTime ? getTime(songInfo.currentTime) : "00:00"}
         </p>
-        <div className="track w-full mx-4">
+        <div className="track  w-full mx-4 text-[#5474b4]">
           <input
             type="range"
             min="0"
@@ -32,7 +34,7 @@ const Player = () => {
             max={songInfo.duration || 0}
             value={songInfo.currentTime}
             onChange={(e) => (audioRef.current.currentTime = e.target.value)}
-            className="w-full cursor-pointer"
+            className="w-full cursor-pointer   bg-[#dce4f5]"
           />
         </div>
         <p className="text-white">

@@ -42,6 +42,7 @@ import { duration } from "@mui/material";
 
 
 const Section = () => {
+  
   const { handleSongSelect, currentSong } = useContext(MusicPlayerContext);
 
   const songs = [
@@ -121,8 +122,15 @@ duration  : "3:16"
   title: 'Peaches', artist: 'Justin Beiber', src:peaches, image: img21,
   duration:"3:17"
 },
+{
+  id:15,
+  title: 'NBSPLV', artist: 'NBSPLV', src:TheLastDown , image: img14,
+  duration:"3:17"
+},
 
 ]
+
+
 
   return (
     <div>
@@ -130,7 +138,7 @@ duration  : "3:16"
         <div className="  border border-slate-900 w-full items-center justify-center md:w-[30vw] h-full md:h-[500px] rounded-2xl text-white bg-slate-950   ">
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14 ">
             <img
-              className="rounded-md shadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"
+              className="rounded-lg md:rounded-mdshadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"
               src={currentSong ? currentSong.image : img10} 
               width={200}
               height={200}
@@ -147,6 +155,7 @@ duration  : "3:16"
         </div>
 
         {/* Right Section: Songs List */}
+        
         <div className="items-center md:h-[500px]   md:w-[68vw] rounded-2xl justify-center  md:grid  md:grid-cols-5   md:overflow-y-scroll scrollbar-none grid grid-cols-2  h-[400px] overflow-auto  overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950  border border-slate-900">
           {songs.map((song, index) => (
             <div
@@ -154,7 +163,7 @@ duration  : "3:16"
               onClick={() => handleSongSelect(song)}
               className=" mb-24 mt-10 md:mt-12 md:mx-6 ml-4 mr-4 md:w-30 w-30 h-[100px] md:h-[100px] md:rounded-2xl rounded-xl cursor-pointer hover:bg-slate-800 "
             >
-              <img src={song.image} className="rounded-md  " alt={song.title} />
+              <img src={song.image} className="rounded-lg md:rounded-md transition-transform duration-300 hover:scale-110 " alt={song.title} />
               <h1 className="mt-3">{song.title}</h1>
               <p className="text-sm mb-6 pb-10">{song.artist}</p>
             </div>

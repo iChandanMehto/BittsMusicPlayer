@@ -68,7 +68,7 @@ export const MusicPlayerProvider = ({ children }) => {
   };
 
   const skipTrackHandler = (direction) => {
-    // i will add some feature in future......
+  
   };
 
   return (
