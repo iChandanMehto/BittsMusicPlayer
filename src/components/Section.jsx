@@ -36,12 +36,15 @@ import COME_THROUGH from './music/comeThrough.mp3'
 import popular from './music/popular.mp3'
 import goldenMood from './music/goldenMood.mp3'
 import img23 from "./images/Moodpic.jpg"
+import img24 from  "./images/dieimg.jpg"
+import dieforyou from "./music/dieforyou.mp3"
+import img25 from './images/timelessimg.jpg'
+import timeless from './music/timeless.mp3'
 import Player from "./Player"; 
 
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
 import { title } from "motion/react-client";
 import { duration } from "@mui/material";
-
 
 const Section = () => {
   
@@ -134,8 +137,20 @@ duration  : "3:16"
   title: 'Mood(feat.iann dior)', artist: 'El Dorado', src:goldenMood , image: img23,
   duration:"2:19"
 },
+{
+  id:16,
+  title: 'Die For You', artist: 'Weekend', src:dieforyou , image: img24,
+  duration:"4:20"
+},
+{
+  id:16,
+  title: 'Timeless', artist: 'Weekend, Playboi Carti', src:timeless , image: img25,
+  duration:"4:16"
+},
 
 ]
+
+
 
 
 
@@ -166,7 +181,7 @@ duration  : "3:16"
         <div className="items-center md:h-[500px]   md:w-[68vw] rounded-2xl justify-center  md:grid  md:grid-cols-5   md:overflow-y-scroll scrollbar-none grid grid-cols-2  h-[400px] overflow-auto  overflow-x-auto scrollbar scrollbar-thumb-[5px] scrollbar-track-slate text-white bg-slate-950  border border-slate-900">
           {songs.map((song, index) => (
             <div
-              key={index}
+              key={song.title}
               onClick={() => handleSongSelect(song)}
               className=" mb-24 mt-10 md:mt-12 md:mx-6 ml-4 mr-4 md:w-30 w-30 h-[100px] md:h-[100px] md:rounded-2xl rounded-xl cursor-pointer hover:bg-slate-800 "
             >

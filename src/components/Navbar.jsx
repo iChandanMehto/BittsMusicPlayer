@@ -3,14 +3,17 @@
 // import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { FiSearch } from "react-icons/fi";
 // import { FiMenu } from "react-icons/fi";
+// import songs from "./Section.js"
 
+// const filSongs = songs.filter((songCard)=>songCard.index.includes(''))
+// console.log(filSongs)
 
 
 const Navbar = () => {
 
+  
+
   return (
-
-
     <nav className="bg-slate-950   h-[75px] w-full fixed top-0   mb-5 rounded-b-2xl   md:rounded-none  md:m-0 p-0 border border-slate-900 shadow-md items-center align-middle ">
       <div className='no-underline rounded-3xl bg-slate-950 flex flex-row justify-between mt-1  align-middle text-center'>
         <ul className='no-underline flex  bg-slate-950 text-white  justify-center text-center md:justify-start gap-1   items-center mr-5 md:gap-10 list-none font-normal text-[19px] ml-[1%]  '>
