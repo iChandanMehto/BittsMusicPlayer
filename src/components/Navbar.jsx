@@ -3,15 +3,10 @@
 // import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { FiSearch } from "react-icons/fi";
 // import { FiMenu } from "react-icons/fi";
-// import songs from "./Section.js"
 
-// const filSongs = songs.filter((songCard)=>songCard.index.includes(''))
-// console.log(filSongs)
 
 
 const Navbar = () => {
-
-  
 
   return (
     <nav className="bg-slate-950   h-[75px] w-full fixed top-0   mb-5 rounded-b-2xl   md:rounded-none  md:m-0 p-0 border border-slate-900 shadow-md items-center align-middle ">

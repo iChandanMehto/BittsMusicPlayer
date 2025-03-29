@@ -1,0 +1,65 @@
+// Import Images
+// import img02 from './images/starboy.jpg ';
+// import img01 from './images/Romantic.webp'
+import img02 from './images/starboy.jpg'
+import img04 from './images/choolu.jpg';
+import img08 from './images/tumho.jpg';
+import img09 from './images/laboko.jpg';
+import img10 from './images/Romantic.webp';
+import img11 from './images/aaogeJabTum.jpg';
+import img13 from './images/oneLove.jpg';
+import img14 from './images/NBSPLV.jpg';
+import img15 from './images/52Bars.jpg';
+import img17 from './images/comThrough.jpg';
+import img18 from './images/reminder_cover.jpg';
+import img19 from './images/lcdp.jpg';
+import img20 from './images/popularimg.jpg';
+import img21 from './images/peachesimg.jpg';
+import img22 from './images/bemine.jpg';
+import img23 from "./images/Moodpic.jpg";
+import img24 from "./images/dieimg.jpg";
+import img25 from './images/timeless.jpg';
+
+// Import Songs
+import Starboy from './music/starboy.mp3';
+import TumHo from './music/TumHo.mp3';
+import LaboKo from './music/LaboKo.mp3';
+import Choolo from './music/Choolo.mp3';
+import OnLove from './music/Onelove.mp3';
+import TheLastDown from './music/TheLastDown.mp3';
+import aaogejabtum from './music/aaogejabtum.mp3';
+import Bars from './music/Bars.mp3';
+import lifeisgoingon from './music/lifeisgoingon.mp3';
+import peaches from './music/peaches.mp3';
+import bemine from './music/bemine.mp3';
+import Reminder from './music/reminder_song.mp3';
+import COME_THROUGH from './music/comeThrough.mp3';
+import popular from './music/popular.mp3';
+import goldenMood from './music/goldenMood.mp3';
+import dieforyou from './music/dieforyou.mp3';
+import timeless from './music/timeless.mp3';
+
+// Song List
+const songs = [
+  // { id: 0, title: "No Song Selected",  img: img01 },
+  { id: 1, title: "Starboy", src: Starboy, img: img02 },
+  { id: 2, title: "Tum Ho", src: TumHo, img: img08 },
+  { id: 3, title: "Labo Ko", src: LaboKo, img: img09 },
+  { id: 4, title: "Choolo", src: Choolo, img: img04 },
+  { id: 5, title: "One Love", src: OnLove, img: img13 },
+  { id: 6, title: "The Last Down", src: TheLastDown, img: img14 },
+  { id: 7, title: "Aaoge Jab Tum", src: aaogejabtum, img: img11 },
+  // { id: 7, title: "Aaoge Jab Tum", src: aaogejabtum, img: img10},
+  { id: 8, title: "52 Bars", src: Bars, img: img15 },
+  { id: 9, title: "Life is Going On", src: lifeisgoingon, img: img19 },
+  { id: 10, title: "Peaches", src: peaches, img: img21 },
+  { id: 11, title: "Be Mine", src: bemine, img: img22 },
+  { id: 12, title: "Reminder", src: Reminder, img: img18 },
+  { id: 13, title: "Come Through", src: COME_THROUGH, img: img17 },
+  { id: 14, title: "Popular", src: popular, img: img20 },
+  { id: 15, title: "Golden Mood", src: goldenMood, img: img23 },
+  { id: 16, title: "Die For You", src: dieforyou, img: img24 },
+  { id: 17, title: "Timeless", src: timeless, img: img25 },
+];
+
+export default songs;

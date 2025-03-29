@@ -1,6 +1,8 @@
 import React, { createContext, useState, useRef, useContext, useEffect } from "react";
+import songs from '../assets/songs.js'
 
 export const MusicPlayerContext = createContext();
+
 
 export const MusicPlayerProvider = ({ children }) => {
   const [currentSong, setCurrentSong] = useState(null);
@@ -8,7 +10,6 @@ export const MusicPlayerProvider = ({ children }) => {
   const [songInfo, setSongInfo] = useState({ currentTime: 0, duration: 0 });
   const audioRef = useRef(new Audio());
 
-  
   const updateSongInfo = () => {
     setSongInfo({
       currentTime: audioRef.current.currentTime,
@@ -68,7 +69,18 @@ export const MusicPlayerProvider = ({ children }) => {
   };
 
   const skipTrackHandler = (direction) => {
-  
+    if (!currentSong) return;
+
+    const currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+
+    let newIndex = currentIndex;
+
+    if (direction === "skip-forward") {
+      newIndex = (currentIndex + 1) % songs.length; // Loop to first song
+    } else if (direction === "skip-back") {
+      newIndex = (currentIndex - 1 + songs.length) % songs.length; // Loop to last song
+    }
+    handleSongSelect(songs[newIndex]);
   };
 
   return (
@@ -82,6 +94,7 @@ export const MusicPlayerProvider = ({ children }) => {
         audioRef,
         updateSongInfo,
         skipTrackHandler,
+        songs,
       }}
     >
       {children}
@@ -89,6 +102,6 @@ export const MusicPlayerProvider = ({ children }) => {
   );
 };
 
-export const useMusicPlayer = () => {
+export default function useMusicPlayer() {
   return useContext(MusicPlayerContext);
-};
+}
