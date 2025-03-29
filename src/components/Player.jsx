@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { PiPlayFill } from "react-icons/pi";
-import { TbPlayerPauseFilled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
+import { TbPlayerPauseFilled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled,  } from "react-icons/tb";
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
 
 const Player = () => {

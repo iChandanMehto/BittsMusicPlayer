@@ -3,6 +3,8 @@ import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
 import songs from "../assets/songs"
 import Player from "./Player";
 
+import Img01 from "../assets/images/Romantic.webp"
+
 const Section = () => {
   const { handleSongSelect, currentSong } = useContext(MusicPlayerContext);
 /*
@@ -16,7 +18,7 @@ im editing and adding songs through useContext and all songs are listed in data 
           <div className="flex flex-col items-center justify-center pt-10 md:pt-3 md:mt-14">
             <img
               className="rounded-lg md:rounded-md shadow-2xl max-h-[200px] max-w-[200px] mt-10 md:mt-0"
-              src={currentSong ? currentSong.img : songs[0].img}
+              src={currentSong ? currentSong.img :  Img01}
               width={200}
               height={200}
               alt={currentSong ? currentSong.title : 'Default Poster'}

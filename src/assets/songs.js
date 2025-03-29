@@ -1,6 +1,6 @@
 // Import Images
 // import img02 from './images/starboy.jpg ';
-// import img01 from './images/Romantic.webp'
+import img01 from './images/Romantic.webp'
 import img02 from './images/starboy.jpg'
 import img04 from './images/choolu.jpg';
 import img08 from './images/tumho.jpg';
@@ -41,25 +41,25 @@ import timeless from './music/timeless.mp3';
 
 // Song List
 const songs = [
-  // { id: 0, title: "No Song Selected",  img: img01 },
-  { id: 1, title: "Starboy", src: Starboy, img: img02 },
-  { id: 2, title: "Tum Ho", src: TumHo, img: img08 },
-  { id: 3, title: "Labo Ko", src: LaboKo, img: img09 },
-  { id: 4, title: "Choolo", src: Choolo, img: img04 },
-  { id: 5, title: "One Love", src: OnLove, img: img13 },
-  { id: 6, title: "The Last Down", src: TheLastDown, img: img14 },
-  { id: 7, title: "Aaoge Jab Tum", src: aaogejabtum, img: img11 },
+  
+  { id: 1, title: "Starboy", src: Starboy, img: img02 , artist: "The Weekend" },
+  { id: 2, title: "Tum Ho", src: TumHo, img: img08 , artist:"Mohit Chauhan "  }, //Suzanne D'Mello => i have to use full name of  singer but implemnt in future , and if name is too long will implement (...) feature.
+
+  { id: 3, title: "Labo Ko", src: LaboKo, img: img09 , artist: "Pritam , KK" },
+  { id: 4, title: "Choolo", src: Choolo, img: img04 , artist:"The Local Train"  },
+  { id: 5, title: "One Love", src: OnLove, img: img13 , artist:"Shubh"  },
+  { id: 6, title: "The Last Down", src: TheLastDown, img: img14 , artist:"NBSPLV"  },
+  { id: 7, title: "Aaoge Jab Tum", src: aaogejabtum, img: img11 , artist:"Rashid Khan"  },
   // { id: 7, title: "Aaoge Jab Tum", src: aaogejabtum, img: img10},
-  { id: 8, title: "52 Bars", src: Bars, img: img15 },
-  { id: 9, title: "Life is Going On", src: lifeisgoingon, img: img19 },
-  { id: 10, title: "Peaches", src: peaches, img: img21 },
-  { id: 11, title: "Be Mine", src: bemine, img: img22 },
-  { id: 12, title: "Reminder", src: Reminder, img: img18 },
-  { id: 13, title: "Come Through", src: COME_THROUGH, img: img17 },
-  { id: 14, title: "Popular", src: popular, img: img20 },
-  { id: 15, title: "Golden Mood", src: goldenMood, img: img23 },
-  { id: 16, title: "Die For You", src: dieforyou, img: img24 },
-  { id: 17, title: "Timeless", src: timeless, img: img25 },
+  { id: 8, title: "52 Bars", src: Bars, img: img15 , artist:"Karan Aujla"  },
+  { id: 9, title: "Life is Going On", src: lifeisgoingon, img: img19 , artist:"Cecilia Krull"  },
+  { id: 10, title: "Peaches", src: peaches, img: img21 , artist:"Justin Bieber"  },
+  { id: 11, title: "Be Mine", src: bemine, img: img22 , artist:"Shubh"  },
+  { id: 12, title: "Reminder", src: Reminder, img: img18 , artist:"The Weekend"  },
+  { id: 14, title: "Popular", src: popular, img: img20 , artist: "The Weekend" },
+  { id: 15, title: "Golden Mood", src: goldenMood, img: img23 , artist: "24kGoldn, iann dior" },
+  { id: 16, title: "Die For You", src: dieforyou, img: img24 , artist: "The Weekend "  },
+  { id: 17, title: "Timeless", src: timeless, img: img25 , artist:"The Weekend, Playboi Carti"  },
 ];
 
 export default songs;

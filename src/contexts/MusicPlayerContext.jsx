@@ -3,7 +3,6 @@ import songs from '../assets/songs.js'
 
 export const MusicPlayerContext = createContext();
 
-
 export const MusicPlayerProvider = ({ children }) => {
   const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -78,11 +77,10 @@ export const MusicPlayerProvider = ({ children }) => {
     if (direction === "skip-forward") {
       newIndex = (currentIndex + 1) % songs.length; // Loop to first song
     } else if (direction === "skip-back") {
-      newIndex = (currentIndex - 1 + songs.length) % songs.length; // Loop to last song
+      newIndex = (currentIndex - 1 + songs.length) % songs.length; // Loop to last song 
     }
     handleSongSelect(songs[newIndex]);
   };
-
   return (
     <MusicPlayerContext.Provider
       value={{
@@ -96,7 +94,8 @@ export const MusicPlayerProvider = ({ children }) => {
         skipTrackHandler,
         songs,
       }}
-    >
+    > 
+    {/*  this all context provider going to use in Player index file and im using as hooks  */}
       {children}
     </MusicPlayerContext.Provider>
   );
