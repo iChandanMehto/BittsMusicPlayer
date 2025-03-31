@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { PiPlayFill } from "react-icons/pi";
-import { TbPlayerPauseFilled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled,  } from "react-icons/tb";
+import { TbPlayerPauseFilled, TbPlayerTrackPrevFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
+import { FaVolumeOff, FaVolumeXmark,  FaVolumeLow , FaVolumeHigh } from "react-icons/fa6";
 import { MusicPlayerContext } from "../contexts/MusicPlayerContext";
 
 const Player = () => {
@@ -39,10 +40,12 @@ const Player = () => {
       </div>
 
       <div className="play-control flex gap-8 justify-center items-center">
+      {/* <FaVolumeHigh/> */}
         <TbPlayerTrackPrevFilled
           onClick={() => skipTrackHandler("skip-back")}
           className="text-white cursor-pointer hover:text-gray-400"
         />
+    
         {isPlaying ? (
           <TbPlayerPauseFilled
             onClick={playSongHandler}
